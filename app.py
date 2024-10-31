@@ -33,7 +33,7 @@ if img_file is not None:
         n_top = 3  # 확률이 높은 순으로 3위까지 반환한다
         for result in results[:n_top]:
             st.write(str(round(result[2]*100, 2)) +
-                     "%의 확률로" + result[0] + " 입니다.")
+                     "%의 확률로 " + result[0] + "입니다.")
 
         # 원 그래프 표시
         pie_labels = [result[1] for result in results[:n_top]]
